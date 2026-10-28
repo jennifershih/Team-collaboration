@@ -6,7 +6,7 @@
 .left_nav {
   padding: 28px 16px;
   width: 250px;
-  background-color: var(--igx-surface-500);
+  background-color: var(--ig-surface-500);
   flex-shrink: 0;
   align-items: stretch;
 }
@@ -19,7 +19,7 @@
 }
 .content_section {
   padding: 16px 32px 26px;
-  background-color: var(--igx-grays-100);
+  background-color: var(--ig-gray-100);
   overflow: hidden;
   flex-grow: 1;
   align-items: stretch;
@@ -80,7 +80,7 @@
   height: max-content;
 }
 .title_1 {
-  color: #D4D5D9;
+  color: #d4d5d9;
   flex-grow: 1;
   flex-shrink: 0;
   min-width: min-content;
@@ -124,13 +124,13 @@
   min-height: 0;
 }
 .icon {
-  color: #E83180;
+  color: #e83180;
   width: 24px;
   height: 24px;
   font-size: 24px;
 }
 .icon_1 {
-  color: #72DA67;
+  color: #72da67;
   width: 24px;
   height: 24px;
   font-size: 24px;
@@ -148,7 +148,7 @@
   min-width: min-content;
 }
 .icon_2 {
-  color: var(--igx-grays-500);
+  color: var(--ig-gray-500);
   width: 24px;
   height: 24px;
   font-size: 24px;
@@ -173,7 +173,7 @@
   min-width: min-content;
 }
 .icon_3 {
-  color: var(--igx-grays-700);
+  color: var(--ig-gray-700);
   width: 24px;
   height: 24px;
   font-size: 24px;

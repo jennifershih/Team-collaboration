@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
+  standalone: false,
   selector: 'app-my-tasks',
   templateUrl: './my-tasks.component.html',
-  styleUrls: ['./my-tasks.component.scss']
+  changeDetection: ChangeDetectionStrategy.Eager,
+  styleUrls: ['./my-tasks.component.scss'],
 })
-export class MyTasksComponent {
-}
+export class MyTasksComponent {}

@@ -1,22 +1,28 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule, HammerModule } from '@angular/platform-browser';
+import { NgModule, provideZoneChangeDetection } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MyTasksComponent } from './my-tasks/my-tasks.component';
-import { IgxBadgeModule, IgxListModule, IgxIconModule, IgxButtonModule, IgxAvatarModule, IgxCalendarModule, IgxCardModule, IgxToggleModule, IgxDropDownModule, IgxNavigationDrawerModule } from 'igniteui-angular';
+import {
+  IgxBadgeModule,
+  IgxListModule,
+  IgxIconModule,
+  IgxButtonModule,
+  IgxAvatarModule,
+  IgxCalendarModule,
+  IgxCardModule,
+  IgxToggleModule,
+  IgxDropDownModule,
+  IgxNavigationDrawerModule,
+} from 'igniteui-angular';
 import { FormsModule } from '@angular/forms';
 import { DashboardsComponent } from './dashboards/dashboards.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    MyTasksComponent,
-    DashboardsComponent
-  ],
+  declarations: [AppComponent, MyTasksComponent, DashboardsComponent],
   imports: [
     BrowserModule,
-    HammerModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     IgxBadgeModule,
@@ -29,10 +35,9 @@ import { DashboardsComponent } from './dashboards/dashboards.component';
     IgxCardModule,
     IgxToggleModule,
     IgxDropDownModule,
-    IgxNavigationDrawerModule
+    IgxNavigationDrawerModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [provideZoneChangeDetection({ eventCoalescing: true })],
+  bootstrap: [AppComponent],
 })
-export class AppModule {
-}
+export class AppModule {}

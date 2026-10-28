@@ -21,7 +21,7 @@
 }
 .column-layout_1 {
   padding: 16px 32px;
-  background-color: var(--igx-grays-100);
+  background-color: var(--ig-gray-100);
   align-items: stretch;
   flex-grow: 1;
   min-height: 50px;
@@ -55,7 +55,7 @@
 .title_1 {
   flex-grow: 1;
   flex-shrink: 0;
-  color: #D4D5D9;
+  color: #d4d5d9;
   height: max-content;
   min-width: min-content;
   white-space: pre-wrap;
@@ -78,13 +78,13 @@
   z-index: 1;
 }
 .icon {
-  color: var(--igx-grays-900);
+  color: var(--ig-gray-900);
   width: 24px;
   height: 24px;
   font-size: 24px;
 }
 .icon_1 {
-  color: var(--igx-grays-500);
+  color: var(--ig-gray-500);
   width: 24px;
   height: 24px;
   font-size: 24px;

@@ -11,13 +11,16 @@ export const routes: Routes = [
   { path: '', redirectTo: 'my-tasks', pathMatch: 'full' },
   { path: 'error', component: UncaughtErrorComponent },
   { path: 'my-tasks', component: MyTasksComponent, data: { text: 'My Tasks' } },
-  { path: 'dashboards', component: DashboardsComponent, data: { text: 'Dashboards' } },
-  { path: '**', component: PageNotFoundComponent } // must always be last
+  {
+    path: 'dashboards',
+    component: DashboardsComponent,
+    data: { text: 'Dashboards' },
+  },
+  { path: '**', component: PageNotFoundComponent }, // must always be last
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes), ErrorRoutingModule],
-  exports: [RouterModule, ErrorRoutingModule]
+  exports: [RouterModule, ErrorRoutingModule],
 })
-export class AppRoutingModule {
-}
+export class AppRoutingModule {}
